@@ -27,8 +27,9 @@ public static void main(String[] args) {
 	LocalDate mybirthday = LocalDate.of(2002, Month.OCTOBER, 16);
 	Etudiant lolo=new Etudiant("lolo","lili","myadress","07003",mybirthday);
 	lolo.toString();
-	Etudiant toto=new Etudiant("lolo","lili","myadress","07003",mybirthday);
+	Etudiant toto=lolo;
 System.out.println(lolo.equals(toto));
+
 	toto.toString();	
 }
  
