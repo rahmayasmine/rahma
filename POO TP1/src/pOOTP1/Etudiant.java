@@ -26,11 +26,20 @@ public void setNom(String nom) {
 public static void main(String[] args) {
 	LocalDate mybirthday = LocalDate.of(2002, Month.OCTOBER, 16);
 	Etudiant lolo=new Etudiant("lolo","lili","myadress","07003",mybirthday);
-	lolo.toString();
+	//lolo.toString();
 	Etudiant toto=lolo;
 System.out.println(lolo.equals(toto));
-
-	toto.toString();	
+	//toto.toString();
+	Etudiant fifi=new Etudiant("fifi","fifi","myadress","07003",mybirthday);
+	Etudiant riri=new Etudiant("riri","riri","myadress","07003",mybirthday);
+	Departement monDepo =new Departement("informatique","biskra");
+	monDepo.inscrire(lolo);
+	monDepo.inscrire(fifi);
+	monDepo.inscrire(toto);
+	monDepo.inscrire(riri);
+	monDepo.deinscrire(toto);
+	monDepo.toString();
+	
 }
  
 }
