@@ -38,6 +38,7 @@ System.out.println(lolo.equals(toto));
 	monDepo.inscrire(toto);
 	monDepo.inscrire(riri);
 	monDepo.deinscrire(toto);
+	//bju
 	monDepo.toString();
 	
 }
